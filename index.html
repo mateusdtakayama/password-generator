@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <figure class="logo">
+        <img src="/assets/logo.png" alt="Logo escrita Gerador de Senhas">
+    </figure>
+
     <main class="container-input">
-        <figure>
-            <img class="logo" src="/assets/logo.png" alt="Logo escrita Gerador de Senhas">
-        </figure>
         <span>Tamanho <span id="value"></span> caracteres</span>
         <input class="slider" id="slider" type="range" min="8" max="25" value="15">
         <button id="button" class="button-cta">Gerar Senha</button>
@@ -20,7 +21,7 @@
     <div id="container-password" class="container-password hide">
         <span class="title">Sua senha gerada foi: </span>
         <span class="password">123</span>
-        <span>Clique na senha para copiar.</span>
+        <span class="tooltip">Clique na senha para copiar.</span>
     </div>
 
     <script src="script.js"></script>
